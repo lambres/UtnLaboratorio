@@ -243,6 +243,7 @@ int Track_Modificacion(Tracking array[], int TAM, int indexUser)
 	int rtn = 0;
 	int idTrack;
 	int flag = 0;
+	int indice;
 	//Tracking auxiliar;
 
 	//LISTO TODOS LOS Gen
@@ -268,7 +269,7 @@ int Track_Modificacion(Tracking array[], int TAM, int indexUser)
 		}
 
 		//OBTENGO INDEX DEL ARRAY DE Gen A MODIFICAR
-		index = Track_BuscarPorID(array, TAM, idTrack);
+		indice = Track_BuscarPorID(array, TAM, idTrack);
 
 		//LLAMO A FUNCION QUE MODIFICA Gen
 		//auxiliar = Track_ModificarUno(array[index]);
